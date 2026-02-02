@@ -3,166 +3,186 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Bloom</title>
-    <meta name="description" content="A calm, modern landing page template." />
+    <title>Eddie’s 10th Birthday Bash!</title>
+    <meta name="description" content="A cheerful, kid-friendly invitation for Eddie’s 10th birthday at Chico’s. Details, RSVP, and gift list in one playful page." />
 
+    <!-- Playful, friendly typefaces -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div class="page-shell">
-      <header class="container nav">
-        <a class="brand" href="#top" aria-label="Home">
-          <span class="brand-mark"></span>
-          Bloom
+    <a class="skip-link" href="#hero">Skip to content</a>
+    <header class="site-header" aria-label="Primary">
+      <div class="container nav">
+        <a class="brand" href="#hero" aria-label="Home">
+          <span class="brand-mark" aria-hidden="true">🎈</span>
+          <span class="brand-name">Eddie · 10!</span>
         </a>
-        <nav class="nav-links">
-          <a href="#features">Features</a>
-          <a href="#story">Story</a>
-          <a href="#cta">Pricing</a>
+        <nav class="nav-links" aria-label="In-page navigation">
+          <a href="#details">Details</a>
+          <a href="#rsvp">RSVP</a>
+          <a href="#gifts">Gift List</a>
         </nav>
         <div class="nav-actions">
-          <a class="ghost" href="#features">Explore</a>
-          <a class="pill" href="#cta">Start free</a>
+          <a class="ghost" href="#details">See Details</a>
+          <a class="pill" href="#rsvp">RSVP Now</a>
         </div>
-      </header>
+      </div>
+    </header>
 
-      <main id="top" class="container">
-        <section class="hero">
-          <div class="hero-copy">
-            <div class="badge">Fresh drop · crafted for clarity</div>
-            <h1>Build a landing page people fall in love with.</h1>
-            <p class="lede">
-              A light, airy one-page template with room to tell your story, highlight what
-              matters, and guide visitors toward a single, confident action.
-            </p>
-            <div class="hero-actions">
-              <a class="pill" href="#cta">Launch in minutes</a>
-              <a class="ghost" href="#features">See what’s inside</a>
-            </div>
-            <ul class="highlights">
-              <li>Responsive out of the box</li>
-              <li>Typography that stays calm under pressure</li>
-              <li>No build tools—just edit and ship</li>
-            </ul>
+    <main id="hero" class="container">
+      <!-- Hero Section -->
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <div class="badge" aria-label="Turning ten">🎉 Turning 10!</div>
+          <h1 id="hero-title">Eddie’s 10th Birthday Bash!</h1>
+          <p class="lede">Celebrate with us on Saturday at Chico’s. Games, cake, and lots of giggles guaranteed!</p>
+          <div class="hero-actions">
+            <a class="pill" href="#rsvp">RSVP Now</a>
+            <a class="ghost" href="#details">See Details</a>
           </div>
-          <div class="hero-visual">
-            <div class="glass-card">
-              <p class="eyebrow">Live preview</p>
-              <h3>Less noise, more delight.</h3>
-              <p>
-                Swap copy, adjust colors, and keep the structure. This is your canvas for a
-                graceful announcement, product launch, or portfolio piece.
-              </p>
-              <div class="stat-row">
-                <div>
-                  <div class="stat-number">98%</div>
-                  <small>Happier first impressions</small>
-                </div>
-                <div>
-                  <div class="stat-number">5 min</div>
-                  <small>From clone to live</small>
-                </div>
-              </div>
-            </div>
+          <ul class="highlights" aria-label="Highlights">
+            <li>Kid‑friendly fun and games</li>
+            <li>Cake, snacks, and party favors</li>
+            <li>Wear your brightest colors!</li>
+          </ul>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="balloons">
+            <span class="balloon b1"></span>
+            <span class="balloon b2"></span>
+            <span class="balloon b3"></span>
           </div>
-        </section>
+          <div class="sparkles"></div>
+        </div>
+      </section>
 
-        <section id="features" class="section">
-          <div class="section-head">
-            <p class="eyebrow">What’s included</p>
-            <h2>Elegant defaults you can trust.</h2>
-            <p class="muted">
-              Clean spacing, balanced colors, and thoughtful microcopy—so you can focus on
-              your product instead of pixels.
-            </p>
-          </div>
-          <div class="grid">
-            <article class="feature-card">
-              <div class="icon">✨</div>
-              <h3>Light aesthetic</h3>
-              <p>Soft gradients, airy whitespace, and friendly typography guide the eye.</p>
-            </article>
-            <article class="feature-card">
-              <div class="icon">⚡️</div>
-              <h3>Fast by default</h3>
-              <p>Zero build tools or dependencies—just static files ready for any host.</p>
-            </article>
-            <article class="feature-card">
-              <div class="icon">📱</div>
-              <h3>Responsive</h3>
-              <p>Layouts adapt fluidly across breakpoints without extra work.</p>
-            </article>
-            <article class="feature-card">
-              <div class="icon">🧭</div>
-              <h3>Clear pathways</h3>
-              <p>Calls-to-action stay visible and consistent from hero to footer.</p>
-            </article>
-          </div>
-        </section>
+      <!-- Event Details Section -->
+      <section id="details" class="section" aria-labelledby="details-title">
+        <div class="section-head">
+          <p class="eyebrow">Event Details</p>
+          <h2 id="details-title">The plan for the big day.</h2>
+          <p class="muted">We can’t wait to celebrate together. Here’s everything you need to know.</p>
+        </div>
+        <div class="grid details-grid">
+          <article class="card">
+            <div class="icon">📅</div>
+            <h3>Date & Time</h3>
+            <p><strong>Saturday, February 7, 2026 · 2:00 PM</strong></p>
+          </article>
+          <article class="card">
+            <div class="icon">📍</div>
+            <h3>Location</h3>
+            <p><strong>Chico’s</strong> — Chico’s backyard playground. Drop‑off welcome, parents invited to hang out!</p>
+          </article>
+          <article class="card">
+            <div class="icon">👕</div>
+            <h3>Dress Code</h3>
+            <p>Wear your favorite <strong>colorful outfit</strong>! Bonus points for sparkles and stripes.</p>
+          </article>
+          <article class="card map-card" aria-label="Mini map illustration of Chico’s">
+            <div class="mini-map" role="img" aria-label="Playful map with a pin for Chico’s"></div>
+          </article>
+        </div>
+      </section>
 
-        <section id="story" class="section split">
-          <div class="section-head">
-            <p class="eyebrow">Story</p>
-            <h2>Designed for teams who crave simplicity.</h2>
-            <p class="muted">
-              Whether you’re announcing a launch or collecting signups, Bloom keeps things
-              poised and purposeful. Swap in your copy, drop in a few visuals, and you’re ready.
-            </p>
-          </div>
-          <div class="list-card">
-            <div class="list-row">
-              <div class="dot"></div>
-              <div>
-                <h4>Built to feel confident</h4>
-                <p>Every section reinforces a single outcome. Nothing extra, nothing loud.</p>
-              </div>
-            </div>
-            <div class="list-row">
-              <div class="dot"></div>
-              <div>
-                <h4>Guided by calm motion</h4>
-                <p>Subtle transitions add depth without distracting from the message.</p>
-              </div>
-            </div>
-            <div class="list-row">
-              <div class="dot"></div>
-              <div>
-                <h4>Ready for any brand</h4>
-                <p>Neutral palette and sensible spacing make customization painless.</p>
-              </div>
-            </div>
-          </div>
-        </section>
+      <!-- RSVP Form Section -->
+      <section id="rsvp" class="section rsvp" aria-labelledby="rsvp-title">
+        <div class="section-head">
+          <p class="eyebrow">RSVP</p>
+          <h2 id="rsvp-title">Can you make it?</h2>
+          <p class="muted">Please let us know by filling out the quick form below.</p>
+        </div>
 
-        <section id="cta" class="section cta">
-          <div class="cta-inner">
+        <form id="rsvpForm" class="rsvp-form" novalidate>
+          <div class="field">
+            <label for="parentName">Parent/Guardian Name<span aria-hidden="true"> *</span></label>
+            <input id="parentName" name="parentName" type="text" required autocomplete="name" />
+          </div>
+
+          <div class="field">
+            <label for="childNames">Child Name(s)<span aria-hidden="true"> *</span></label>
+            <input id="childNames" name="childNames" type="text" required />
+          </div>
+
+          <div class="field inline">
             <div>
-              <p class="eyebrow">Call to action</p>
-              <h2>Fall in love with your launch.</h2>
-              <p class="muted">
-                Ship the most lovable version of your story today. Update the copy, adjust the
-                accent color, and publish—no fuss.
-              </p>
+              <label for="guests">Number of Guests</label>
+              <select id="guests" name="guests">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
             </div>
-            <div class="cta-actions">
-              <button class="pill" id="ctaButton" type="button">Make it yours</button>
-              <p class="small" id="ctaResult" aria-live="polite"></p>
-            </div>
+            <fieldset class="radio-group">
+              <legend>RSVP</legend>
+              <label><input type="radio" name="rsvp" value="yes" required /> Yes</label>
+              <label><input type="radio" name="rsvp" value="no" /> No</label>
+            </fieldset>
           </div>
-        </section>
-      </main>
 
-      <footer class="container footer">
-        <small>© <span id="year"></span> Bloom—crafted for clarity.</small>
-      </footer>
-    </div>
+          <div class="field">
+            <label for="diet">Dietary Notes (optional)</label>
+            <textarea id="diet" name="diet" rows="3" placeholder="Allergies or preferences"></textarea>
+          </div>
+
+          <div class="form-actions">
+            <button class="pill" type="submit">Send RSVP</button>
+            <p id="rsvpResult" class="small" aria-live="polite"></p>
+          </div>
+          <p class="micro muted">Submitting shows a friendly confirmation only—no data is sent anywhere.</p>
+        </form>
+      </section>
+
+      <!-- Gift List Section -->
+      <section id="gifts" class="section gifts" aria-labelledby="gifts-title">
+        <div class="section-head">
+          <p class="eyebrow">Gift Ideas</p>
+          <h2 id="gifts-title">Eddie’s Toy Wish List</h2>
+          <p class="muted">Pick one so Eddie gets a variety of fun surprises! Duplicates are discouraged 😊</p>
+        </div>
+
+        <ol class="gift-grid">
+          <li><span class="gift-name">LEGO Space Rover</span><span class="gift-desc">Build, roll, explore.</span></li>
+          <li><span class="gift-name">Remote‑Control Car</span><span class="gift-desc">Fast and flashy.</span></li>
+          <li><span class="gift-name">Science Kit</span><span class="gift-desc">Fizz, color, experiment!</span></li>
+          <li><span class="gift-name">Art Supply Set</span><span class="gift-desc">Markers, paints, stickers.</span></li>
+          <li><span class="gift-name">Puzzle (500‑piece)</span><span class="gift-desc">Galaxies or dinosaurs.</span></li>
+          <li><span class="gift-name">Board Game</span><span class="gift-desc">Family game night.</span></li>
+          <li><span class="gift-name">Football</span><span class="gift-desc">Backyard passes.</span></li>
+          <li><span class="gift-name">Basketball</span><span class="gift-desc">Shoot hoops at the park.</span></li>
+          <li><span class="gift-name">Sketchbook</span><span class="gift-desc">Heavy‑weight pages.</span></li>
+          <li><span class="gift-name">Graphic Novels</span><span class="gift-desc">Adventure and laughs.</span></li>
+          <li><span class="gift-name">Building Bricks</span><span class="gift-desc">Compatible set.</span></li>
+          <li><span class="gift-name">Yo‑yo</span><span class="gift-desc">Loops and tricks!</span></li>
+          <li><span class="gift-name">Kite</span><span class="gift-desc">Catch a breezy day.</span></li>
+          <li><span class="gift-name">Slime Kit</span><span class="gift-desc">Squish and sparkle.</span></li>
+          <li><span class="gift-name">STEM Robot</span><span class="gift-desc">Code and drive.</span></li>
+          <li><span class="gift-name">Soccer Ball</span><span class="gift-desc">Goal time.</span></li>
+          <li><span class="gift-name">Magic Set</span><span class="gift-desc">Amaze your friends.</span></li>
+          <li><span class="gift-name">Rubik’s Cube</span><span class="gift-desc">Twist and solve.</span></li>
+          <li><span class="gift-name">Headlamp</span><span class="gift-desc">Backyard night games.</span></li>
+          <li><span class="gift-name">Stuffed Animal</span><span class="gift-desc">Soft and huggable.</span></li>
+        </ol>
+      </section>
+    </main>
+
+    <footer class="container footer">
+      <small>
+        Can’t wait to celebrate with you! · Saturday, February 7, 2026 · 2:00 PM · Chico’s
+        <span aria-hidden="true">·</span> <span id="year"></span>
+      </small>
+      <p class="micro muted">Questions? Text or call the host parent. 🎂🎈</p>
+    </footer>
+
+    <div id="confetti-layer" aria-hidden="true"></div>
 
     <script src="./script.js" defer></script>
   </body>
 </html>
+
